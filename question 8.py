@@ -1,12 +1,16 @@
-n = 5  # number of lines
+rows = 5
+for i in range(rows):
+    for j in range(i):
+        print('_', end=' ')
+    for k in range(rows - i):
+        print('*', end=' ')
+    print()  
 
-for i in range(n):
-    spaces = '_' * i
-    stars = '*' * (n - i)
-    print(spaces + stars)
 
-#*****
-#_****
-#__***
-#___**
-#____*
+
+#*   * * * *          
+#_  * * * *        
+#_ _ * * *         
+#_ _ _*  *        
+
+#_ _ _ _* 
