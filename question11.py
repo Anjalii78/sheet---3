@@ -10,7 +10,10 @@
 #****  ****
 #**********
 
-n = 10  # Total number of rows
+
+    
+
+n = 10  
 
 for i in range(n):
     if i < n // 2:
@@ -21,6 +24,3 @@ for i in range(n):
         spaces = (n - i - 1) * 2
 
     print("*" * stars + " " * spaces + "*" * stars)
-
-
-    
