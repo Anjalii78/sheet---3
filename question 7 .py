@@ -8,14 +8,13 @@
 
 
 
-n = int(input("Enter no. of rows : "))
 
+
+n=int(input("enter the number "))
 for i in range(1,n+1):
-    for j in range(n-i):
-        print(' ',end="")
-    for k in range(i):
-        print('*',end=" ")
-    print()
-
-
-
+     for j in range (n-i):
+         print("_", end=" ")
+     for k in range(i):
+         print("*",end=" ")
+     print()
+   
