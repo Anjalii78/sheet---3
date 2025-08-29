@@ -5,11 +5,14 @@
 #*        *
 
 
-n = 5  
-for i in range(n):
-    star = n - i
-    space = i * 2
-
-    print('*' * star + ' ' * space + '*' * star)
 
 
+n = int(input("Enter no. of rows : "))
+for i in range(1,n+1):
+    for j in range(n-i+1):
+        print("*",end=" ")
+    for j in range(2*i-2):
+        print(" ",end=" ")
+    for j in range(n-i+1):
+        print("*",end=" ")
+    print()
