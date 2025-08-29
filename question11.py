@@ -13,14 +13,22 @@
 
     
 
-n = 10  
+n = int(input("Enter no. of rows : "))
+for i in range(1,n+1):
+    for j in range(n-i+1):
+        print("*",end=" ")
+    for j in range(2*i-2):
+        print(" ",end=" ")
+    for j in range(n-i+1):
+        print("*",end=" ")
+    print()
 
-for i in range(n):
-    if i < n // 2:
-        stars = n // 2 - i
-        spaces = i * 2
-    else:
-        stars = i - n // 2 + 1
-        spaces = (n - i - 1) * 2
 
-    print("*" * stars + " " * spaces + "*" * stars)
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    for j in range(2*n-2*i):
+        print(" ",end=" ")
+    for j in range(i):
+        print("*",end=" ")
+    print()
