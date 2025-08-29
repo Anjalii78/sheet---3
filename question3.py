@@ -1,8 +1,15 @@
-#*****
-#****
-#***
-#**
-#*
+'''
+*****
+****
+***
+**
+*
+'''
 
-for i in range(5, 0, -1):  # Start from 5 and go down to 1
-    print('*' * i)
+
+
+n=5
+for i in range(n):
+    for j in range(i,n):
+        print("*" , end=" ")
+    print()  
