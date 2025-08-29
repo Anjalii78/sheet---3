@@ -1,8 +1,18 @@
-#*_____*
-#*____*
-#*___*
-#*__*
-#*_*
+'''
+*_____*
+*____*
+*___*
+*__*
+*_*
+'''
 
-for i in range(5, 0, -1):
-    print("*" + "_" * i + "*")
+
+rows = 5
+for i in range(rows):
+    print('*', end=' ')
+    for j in range(rows - i):
+        print('_', end=' ')
+    if i != rows - 1:
+        print('*')
+    else:
+        print()
