@@ -1,11 +1,20 @@
-n = 5  # number of lines
+'''
+ _ _ _ _*        
+ _ _ _ * *           
+ _ _ *  * *           
+ _  * *  * * 
+*  * *  * *   
+'''
 
-for i in range(1, n + 1):
-    spaces = '_' * (n - i)
-    stars = '*' * i
-    print(spaces + stars)
-#____*
-#___**
-#__***
-#_****
-#*****
+
+
+
+
+
+
+row = 5
+for i in range(1, row + 1):
+    l = row - i
+    print(' ' * l, end='')  
+    print('* ' * i)
+
