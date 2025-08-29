@@ -6,10 +6,12 @@
 *_*
 '''
 
-n = int(input("Enter no of rows : "))
-
-for i in range(1, n+1):
-    print("*", end=" ")
-    for j in range(n - i+1):
-        print(" ", end="")  
-    print("*")
+rows = 5
+for i in range(rows):
+    print('*', end=' ')
+    for j in range(rows - i):
+        print('_', end=' ')
+    if i != rows - 1:
+        print('*')
+    else:
+        print()
