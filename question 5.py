@@ -1,15 +1,13 @@
-#*__*
-#*__*
-#*__*
-#*__*
-#*__*
+'''
+*__*
+*__*
+*__*
+*__*
+*__*
+'''
 
 
-for i in range(5):
-    print("*__*")
+rows = 5
+for i in range(rows):
+    print('* _ _ _ *')
 
-
-n=5
-space=3
-for i in range(n):
-    print("*" + '' * space+"*")
